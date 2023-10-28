@@ -1,0 +1,48 @@
+{
+    "name": "miovisman/test-extension",
+    "type": "forkbb-extension",
+    "description": "Test extension for ForkBB.",
+    "homepage": "https://forkbb.ru/",
+    "version": "1.0.2",
+    "time": "2023-10-28",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Visman",
+            "email": "mio.visman@yandex.ru",
+            "homepage": "https://github.com/MioVisman"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "MioVisman\\TestExtension\\": "scr/"
+        }
+    },
+    "require": {
+        "php": ">=8.0.0",
+        "forkbb/forkbb": ">=0.0070"
+    },
+    "extra": {
+        "display-name": "Test extension",
+        "requirements": {
+            "php": ">=8.0.0",
+            "forkbb": ">=70"
+        },
+        "templates": [
+            {
+                "type": "pre",
+                "template": "layouts/main",
+                "name": "footerFirstStart",
+                "priority": 0,
+                "file": "templates/mainFooterFirstStart0.forkbb.php"
+            },
+            {
+                "type": "pre",
+                "template": "layouts/main",
+                "name": "footerFirstStart",
+                "priority": 10,
+                "file": "templates/mainFooterFirstStart10.forkbb.php"
+            }
+        ]
+    }
+}
