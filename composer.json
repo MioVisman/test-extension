@@ -3,8 +3,8 @@
     "type": "forkbb-extension",
     "description": "Test extension for ForkBB.",
     "homepage": "https://forkbb.ru/",
-    "version": "1.0.2",
-    "time": "2023-10-28",
+    "version": "1.1.0",
+    "time": "2023-11-13",
     "license": "MIT",
     "authors": [
         {
@@ -20,14 +20,21 @@
     },
     "require": {
         "php": ">=8.0.0",
-        "forkbb/forkbb": ">=0.0070"
+        "forkbb/forkbb": ">=0.0074"
     },
     "extra": {
         "display-name": "Test extension",
         "requirements": {
             "php": ">=8.0.0",
-            "forkbb": ">=70"
+            "forkbb": ">=74"
         },
+        "symlinks": [
+            {
+                "type": "public",
+                "target": "img",
+                "link": "img/test-extension"
+            }
+        ],
         "templates": [
             {
                 "type": "pre",
